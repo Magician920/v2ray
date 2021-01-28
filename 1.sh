@@ -9,7 +9,7 @@ yum install -y wget
 #下载Mysql repo源
 wget https://repo.mysql.com//mysql80-community-release-el8-1.noarch.rpm
 #安装 yum repo文件并更新 yum 缓存
-rpm -ivh mysql57-community-release-el7-11.noarch.rpm
+rpm -ivh mysql80-community-release-el8-1.noarch.rpm
 #更新 yum
 yum clean all
 yum makecache
