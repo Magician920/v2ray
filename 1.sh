@@ -13,6 +13,9 @@ rpm -ivh mysql80-community-release-el8-1.noarch.rpm
 #更新 yum
 yum clean all
 yum makecache
+#安装依赖包
+yum -y groupinstall "Desktop Platform Development"
+yum install  -y  gd-devel  libjpeg-devel  libpng-devel  libxml2-devel bzip2-devel libcurl-devel  libmcrypt  libmcrypt-devel  zlib-devel  net-snmp-devel openssl  cmake  ncurses-devel  git  gcc  libevent-devel
 #安装MySQL
 yum install -y mysql-community-server
 #将mysql 服务加入开机启动项，并启动mysql进程
